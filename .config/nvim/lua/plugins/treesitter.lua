@@ -1,10 +1,12 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
-    "nvim-treesitter/nvim-treesitter-context"
+    "nvim-treesitter/nvim-treesitter-context",
   },
+  branch = "master",
+  lazy = false,
   build = ":TSUpdate",
-  event = { "BufReadPre", "BufNewFile" },
+  -- event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
@@ -16,7 +18,6 @@ return {
         "markdown",
         "markdown_inline",
       },
-      sync_install = false,
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },

@@ -1,28 +1,22 @@
 return {
   "catppuccin/nvim",
-  lazy = false,
   name = "catppuccin",
   priority = 1000,
   config = function()
     require("catppuccin").setup({
+      flavour = "auto",
+      background = {
+        light = "latte",
+        dark = "macchiato",
+      },
       transparent_background = true,
-      integrations = {
-        cmp = true,
-        gitsigns = true,
-        harpoon = true,
-        indent_blankline = {
-          enabled = true,
-          scope_color = "",
-          colored_indent_levels = false,
-        },
-        mason = true,
-        native_lsp = { enabled = true },
-        nvimtree = true,
-        telescope = true,
-        treesitter = true,
+      auto_integrations = true,
+      custom_highlights = {
+        NormalFloat = { bg = "none" },
+        TelescopeBorder = { bg = "none" },
       },
     })
 
-    vim.cmd.colorscheme("catppuccin-macchiato")
+    vim.cmd.colorscheme("catppuccin")
   end,
 }

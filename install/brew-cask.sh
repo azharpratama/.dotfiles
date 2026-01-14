@@ -13,7 +13,7 @@ apps=(
   ghostty
   google-chrome
   handbrake
-  karabiner-elements
+  hyperkey
   maccy
   miniconda
   obsidian
@@ -25,7 +25,6 @@ apps=(
   tor-browser
   transnomino
   visual-studio-code
-  wezterm
   zoom
 )
 
