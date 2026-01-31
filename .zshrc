@@ -117,7 +117,9 @@ tags:
 EOF
     fi
 
-    ${EDITOR:-nvim} "$FILE"
+    cd "$VAULT" || return
+
+    ${EDITOR:-nvim} "${FILE#$VAULT/}"
 }
 
 # Added by Antigravity
