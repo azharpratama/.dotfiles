@@ -2,3 +2,5 @@
 .config/tmux/plugins/
 .config/karabiner/*
 !.config/karabiner/karabiner.json
+.config/github-copilot/
+.config/thefuck/

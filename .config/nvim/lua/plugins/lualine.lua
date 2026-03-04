@@ -8,7 +8,7 @@ return {
         "nvim-tree",
       },
       options = {
-        component_separators = "",
+        component_separators = "│",
         section_separators = "",
         globalstatus = true,
       },

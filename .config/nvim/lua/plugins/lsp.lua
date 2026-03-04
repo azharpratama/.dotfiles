@@ -50,7 +50,6 @@ return {
       clangd = {},
       pyright = {},
       rust_analyzer = {},
-      gopls = {},
 
       html = {},
       emmet_language_server = {},

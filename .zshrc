@@ -124,3 +124,6 @@ EOF
 
 # Added by Antigravity
 export PATH="/Users/azhar/.antigravity/antigravity/bin:$PATH"
+
+# Fuck
+eval $(thefuck --alias)
